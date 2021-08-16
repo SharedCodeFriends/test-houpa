@@ -63,5 +63,5 @@ Inicie o servidor de desenvolvimento local
 # Agradecimentos
 
 ### Foi um projeto sensacional!
-### gradeço muito pela oportunidade e espero que vocês tenham gostado.
+### Agradeço muito pela oportunidade e espero que vocês tenham gostado.
 ### Um grande abraço e estou ansioso para o feedback!
