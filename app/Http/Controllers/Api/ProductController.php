@@ -36,7 +36,7 @@ class ProductController extends Controller
     public function show($slug)
     {
         try {
-            $product = $this->products->where('slug', $slug)->first();
+            $product = $this->products->where('slug', $slug)->with(['colors','sizes','photos'])->first();
 
             if (!$product) {
                 return response()->json(['message' => 'Product not found'], 404);
@@ -78,7 +78,7 @@ class ProductController extends Controller
                 ]);
             }
 
-            return response()->json(['message' => 'Product created'], 200);
+            return response()->json(['message' => 'Product created'], 201);
         } catch (\Exception $e) {
             return response()->json(['message' => $e->getMessage()], 500);
         }
